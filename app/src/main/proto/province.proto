@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.example.provinceprotodatastore";
+option java_outer_classname = "ProvinceProto";
+option java_multiple_files = true;
+
+message Province {
+  string province_id = 1;
+  string province_name = 2;
+  string province_type = 3 ;
+
+}
+message ProvinceList {
+  repeated Province provinces = 1 ;
+}
